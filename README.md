@@ -21,7 +21,7 @@ E-Learning-Platform/
 │── .gitignore              # Ignore Unnecessary Files
 
 
-Backend (Node.js + Express + MongoDB)
+Backend (Node.js + Express + MongoDB): 
 Install Dependencies
 
 cd backend
@@ -29,7 +29,7 @@ npm init -y
 npm install express mongoose dotenv cors body-parser
 
 
-server.js (Main Backend File)
+server.js (Main Backend File):
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
