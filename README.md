@@ -21,7 +21,7 @@ E-Learning-Platform/
 │── .gitignore              # Ignore Unnecessary Files
 
 
-Backend (Node.js + Express + MongoDB): 
+# Backend (Node.js + Express + MongoDB): 
 Install Dependencies
 
 cd backend
@@ -29,7 +29,7 @@ npm init -y
 npm install express mongoose dotenv cors body-parser
 
 
-server.js (Main Backend File):
+# server.js (Main Backend File):
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -54,7 +54,7 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 
 
-User Model (MongoDB Schema):
+# User Model (MongoDB Schema):
 const mongoose = require("mongoose");
 
 const UserSchema = new mongoose.Schema({
@@ -89,7 +89,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-# Sample dataset
+
 courses = pd.DataFrame({
     "course_id": [1, 2, 3, 4],
     "title": ["Python Basics", "Machine Learning", "Web Development", "Data Science"],
@@ -106,18 +106,18 @@ def recommend_courses(user_interest):
     recommendations = courses.iloc[similarity.argsort()[0][-3:]]  
     return recommendations.to_dict(orient="records")
 
-# Example usage
+
 user_interest = "AI"
 print(recommend_courses(user_interest))
 
 
 
-Frontend (React.js):
+# Frontend (React.js):
 cd frontend
 npx create-react-app .
 npm install axios react-router-dom
 
-App.js:
+# App.js:
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
