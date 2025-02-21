@@ -67,7 +67,7 @@ const UserSchema = new mongoose.Schema({
 module.exports = mongoose.model("User", UserSchema);
 
 
-User Routes:
+# User Routes:
 const express = require("express");
 const router = express.Router();
 const User = require("../models/User");
@@ -84,7 +84,7 @@ router.post("/register", async (req, res) => {
 
 module.exports = router;
 
-
+# code
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
